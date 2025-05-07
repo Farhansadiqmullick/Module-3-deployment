@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ostad-app:
+    image: farhanmullick/ostad-module-5:v1-dockerfile
+    container_name: ostad-app
+    ports:
+      - "8080:5000"
+    restart: unless-stopped
